@@ -1,9 +1,8 @@
 # coding=utf-8
+# Author: Vika Zhou
 import requests
 import json
 import codecs
-
-
 
 # http://apistore.baidu.com/astore/serviceinfo/1840.html
 def get_ip_address(ip):
