@@ -37,6 +37,7 @@ def conv_identity(name):
 def conv_acol_sql(column):
     type_map = {'VARCHAR':'VARCHAR2',
                 'BIT': 'NUMBER',
+                'INTEGER': 'NUMBER',
                 'COUNTER': 'NUMBER',
                 'DATETIME': 'DATE'
                 }
