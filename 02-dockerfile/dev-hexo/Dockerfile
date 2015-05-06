@@ -8,7 +8,7 @@ RUN npm install -g cnpm --registry=https://r.cnpmjs.org \
   && cd /data/blog \
   && hexo init
 
-WORKDIRE /data/blog
+WORKDIR /data/blog
 
 
 VOLUME ["/data/blog"]
