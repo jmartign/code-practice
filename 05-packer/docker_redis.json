@@ -1,0 +1,26 @@
+{
+    "builders": [
+        {
+            "type": "docker",
+            "image": "ubuntu",
+            "commit": true
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "sleep 30",
+                "sudo apt-get install update",
+                "sudo apt-get install -y redis-server"
+            ]
+        }
+    ],
+    "post-processors": [
+        {
+            "type": "docker-tag",
+            "repository": "redis-test",
+            "tag": "packer"
+        }
+    ]
+}
