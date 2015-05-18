@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*-
+# -*- encoding:utf-8 -*-
 
 from collections import namedtuple
 import win32com.client

@@ -1,4 +1,4 @@
-# -*- encoding: utf8 -*-
+# -*- encoding:utf-8 -*-
 # http://www.gossamer-threads.com/lists/python/python/868295
 
 import os, sys

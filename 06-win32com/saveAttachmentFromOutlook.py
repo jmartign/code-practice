@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*-
+# -*- encoding:utf-8 -*-
 import os
 import os.path
 import zipfile
