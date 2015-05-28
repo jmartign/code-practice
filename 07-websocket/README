@@ -1,0 +1,23 @@
+Modifed from:
+Client  http://www.oschina.net/code/snippet_176897_5938
+Server http://www.oschina.net/code/snippet_176897_5937
+
+Host: 127.0.0.1:1234
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:36.0) Gecko/20100101 Firefox/36.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: http://localhost:8000
+Sec-WebSocket-Key: yzEVCwMcXZmXf76DFwLrNA==
+Connection: keep-alive, Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+
+Connection: Upgrade
+Sec-WebSocket-Accept: Ov+2XVkL7O1PJ+b8NSw5bDOT9hI=
+Sec-WebSocket-Location: ws://127.0.0.1:1234/
+Sec-WebSocket-Origin: http://localhost:8000
+Upgrade: websocket
