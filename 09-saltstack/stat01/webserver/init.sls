@@ -6,6 +6,11 @@ apache2:         # ID declaration
     - require:
       - pkg: apache2
 
+#apache:
+#  pkg.installed:
+#    - name: {{ pillar['pkgs']['apache']}}
+#    - name: {{ salt['pillar.get']('pkgs:apache', 'httpd') }}
+
 /var/www/index.html:                       # ID declaration
   file:                                   # state declaration
     - managed                             # function
