@@ -69,7 +69,7 @@ def convert_all_under_folder(folder_path):
 
 if __name__ == '__main__':
     #convert_md_file('test.md', 'test2.md')
-    convert_all_under_folder('/home/vika/development/nodejs/hexo_blog/source/_posts')
+    convert_all_under_folder('./')
 
 
 
