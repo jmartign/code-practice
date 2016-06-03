@@ -34,15 +34,20 @@ def check_for_host(host):
                 auth_enabled = True
         except pymongo.errors.ServerSelectionTimeoutError:
             client_port_opened = False
-    print('Checked host %s' % host)
-    print('Mongo client port %d is %s, auth is %s' % (CLIENT_PORT, 
+    print('== Checked host %s' % host)
+    print('  Mongo client port %d is %s, auth is %s' % (CLIENT_PORT, 
             (client_port_opened and 'OPEN' or 'CLOSE'), 
             (auth_enabled and 'ENABLED' or 'DISABLED')))
-    print('web port %d is %s' % (WEB_PORT, (web_port_opened and 'OPEN' or 'CLOSE')))
+    print('  web port %d is %s' % (WEB_PORT, (web_port_opened and 'OPEN' or 'CLOSE')))
 
 
 if __name__ == '__main__':
     host = '127.0.0.1'
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 1:
+        check_for_host(host)
+        
+        host = socket.gethostbyname(socket.gethostname())
+        check_for_host(host)
+    else:
         host = sys.argv[1]
-    check_for_host(host)
+        check_for_host(host)
